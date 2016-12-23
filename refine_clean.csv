@@ -1,0 +1,96 @@
+       company product_category product_number                               full_address             name  X X.1 X.2 X.3 X.4 X.5 X.6 X.7 X.8 X.9 X.10 X.11
+"1      philips       Smartphone              5 Groningensingel 147,arnhem,the netherlands    dhr p. jansen NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"2      philips       Smartphone             43 Groningensingel 148,arnhem,the netherlands    dhr p. hansen NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"3      philips           Laptop              3 Groningensingel 149,arnhem,the netherlands    dhr j. Gansen NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"4      philips           Laptop             34 Groningensingel 150,arnhem,the netherlands    dhr p. mansen NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"5      philips           Laptop             12 Groningensingel 151,arnhem,the netherlands   dhr p. fransen NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"6      philips       Smartphone             23 Groningensingel 152,arnhem,the netherlands  dhr p. franssen NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"7         akzo               TV             43   Leeuwardenweg 178,arnhem,the netherlands    dhr p. bansen NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"8         akzo               TV             12   Leeuwardenweg 179,arnhem,the netherlands    dhr p. vansen NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"9         akzo           Laptop              5   Leeuwardenweg 180,arnhem,the netherlands   dhr p. bransen NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"10        akz0       Smartphone             34   Leeuwardenweg 181,arnhem,the netherlands   dhr p. janssen NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"11        akzo           Tablet              5   Leeuwardenweg 182,arnhem,the netherlands  mevr l.  rokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"12        akzo           Tablet              9   Leeuwardenweg 183,arnhem,the netherlands  mevr l.  lokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"13        akzo           Laptop              8   Leeuwardenweg 184,arnhem,the netherlands  mevr l.  mokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"14     philips       Smartphone             56   Delfzijlstraat 54,arnhem,the netherlands  mevr l.  mokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"15     philips               TV             67   Delfzijlstraat 55,arnhem,the netherlands  mevr l.  mokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"16     philips               TV             21   Delfzijlstraat 56,arnhem,the netherlands  mevr l.  mokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"17  van houten           Laptop             45   Delfzijlstraat 57,arnhem,the netherlands  mevr l.  sokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"18  van houten               TV             56   Delfzijlstraat 58,arnhem,the netherlands  mevr l.  wokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"19  van houten               TV             65   Delfzijlstraat 59,arnhem,the netherlands  mevr l.  kokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"20  van houten           Laptop             21   Delfzijlstraat 60,arnhem,the netherlands  mevr l.  Bokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"21  van houten       Smartphone             23   Delfzijlstraat 61,arnhem,the netherlands  mevr l.  dokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"22    unilever           Laptop              3      Jourestraat 23,arnhem,the netherlands  mevr l.  gokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"23    unilever           Tablet              4      Jourestraat 24,arnhem,the netherlands mevr l.  stokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"24    unilever           Tablet              6      Jourestraat 25,arnhem,the netherlands  mevr l.  rokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"25    unilever           Tablet              8      Jourestraat 26,arnhem,the netherlands  mevr l.  rokken NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"26                                        <NA>                                         ,,                  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"27                                        <NA>                                         ,,                  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"28                                        <NA>                                         ,,                  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"29                                        <NA>                                         ,,                  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+"30                                        <NA>                                         ,,                  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA   NA   NA"
+    X.12 X.13 X.14 X.15 X.16 X.17 X.18 X.19 company_philips company_akzo company_unilever company_van_houten product_smartphone product_tv product_laptop
+1     NA   NA   NA   NA   NA   NA   NA   NA               1            0                0                  0                  1          0              0
+2     NA   NA   NA   NA   NA   NA   NA   NA               1            0                0                  0                  1          0              0
+3     NA   NA   NA   NA   NA   NA   NA   NA               1            0                0                  0                  0          0              1
+4     NA   NA   NA   NA   NA   NA   NA   NA               1            0                0                  0                  0          0              1
+5     NA   NA   NA   NA   NA   NA   NA   NA               1            0                0                  0                  0          0              1
+6     NA   NA   NA   NA   NA   NA   NA   NA               1            0                0                  0                  1          0              0
+7     NA   NA   NA   NA   NA   NA   NA   NA               0            1                0                  0                  0          1              0
+8     NA   NA   NA   NA   NA   NA   NA   NA               0            1                0                  0                  0          1              0
+9     NA   NA   NA   NA   NA   NA   NA   NA               0            1                0                  0                  0          0              1
+10    NA   NA   NA   NA   NA   NA   NA   NA               0            0                0                  0                  1          0              0
+11    NA   NA   NA   NA   NA   NA   NA   NA               0            1                0                  0                  0          0              0
+12    NA   NA   NA   NA   NA   NA   NA   NA               0            1                0                  0                  0          0              0
+13    NA   NA   NA   NA   NA   NA   NA   NA               0            1                0                  0                  0          0              1
+14    NA   NA   NA   NA   NA   NA   NA   NA               1            0                0                  0                  1          0              0
+15    NA   NA   NA   NA   NA   NA   NA   NA               1            0                0                  0                  0          1              0
+16    NA   NA   NA   NA   NA   NA   NA   NA               1            0                0                  0                  0          1              0
+17    NA   NA   NA   NA   NA   NA   NA   NA               0            0                0                  1                  0          0              1
+18    NA   NA   NA   NA   NA   NA   NA   NA               0            0                0                  1                  0          1              0
+19    NA   NA   NA   NA   NA   NA   NA   NA               0            0                0                  1                  0          1              0
+20    NA   NA   NA   NA   NA   NA   NA   NA               0            0                0                  1                  0          0              1
+21    NA   NA   NA   NA   NA   NA   NA   NA               0            0                0                  1                  1          0              0
+22    NA   NA   NA   NA   NA   NA   NA   NA               0            0                1                  0                  0          0              1
+23    NA   NA   NA   NA   NA   NA   NA   NA               0            0                1                  0                  0          0              0
+24    NA   NA   NA   NA   NA   NA   NA   NA               0            0                1                  0                  0          0              0
+25    NA   NA   NA   NA   NA   NA   NA   NA               0            0                1                  0                  0          0              0
+26    NA   NA   NA   NA   NA   NA   NA   NA               0            0                0                  0                  0          0              0
+27    NA   NA   NA   NA   NA   NA   NA   NA               0            0                0                  0                  0          0              0
+28    NA   NA   NA   NA   NA   NA   NA   NA               0            0                0                  0                  0          0              0
+29    NA   NA   NA   NA   NA   NA   NA   NA               0            0                0                  0                  0          0              0
+30    NA   NA   NA   NA   NA   NA   NA   NA               0            0                0                  0                  0          0              0
+    product_tablet
+1                0
+2                0
+3                0
+4                0
+5                0
+6                0
+7                0
+8                0
+9                0
+10               0
+11               1
+12               1
+13               0
+14               0
+15               0
+16               0
+17               0
+18               0
+19               0
+20               0
+21               0
+22               0
+23               1
+24               1
+25               1
+26               0
+27               0
+28               0
+29               0
+30               0
+" [ reached getOption(""max.print"") -- omitted 969 rows ]"
+
+>
