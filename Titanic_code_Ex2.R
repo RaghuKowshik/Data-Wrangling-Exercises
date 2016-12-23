@@ -1,6 +1,10 @@
-#0: load csv data into R data frame
 
+library(data.table)
+library(dplyr)
+library(tidyr)
 library(readr)
+
+#0: load csv data into R data frame
 
 titanic_original <- read.csv(file="titanic_original.csv", head=TRUE, sep=",")
 titanic_original
