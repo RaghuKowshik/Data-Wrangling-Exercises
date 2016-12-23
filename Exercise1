@@ -1,0 +1,80 @@
+
+#0: load csv data into R data frame
+library(readr)
+refine_original <- read.csv(file="refine_original.csv", head=TRUE, sep=",")
+
+refine_original
+
+library(dplyr)
+
+#1: Clean the data set. change company name spelling to all lower case"
+refine_original$company <- tolower(refine_original$company)
+
+refine_original
+
+# spelling corrections in company name
+# standardize spelling of company names as "philips", "akzo", "van houten" and "unilever
+
+refine_original$company <- gsub("phillips", "philips", refine_original$company)
+refine_original$company <- gsub("ak zo", "akzo", refine_original$company)
+refine_original$company <- gsub("unilver", "unilever", refine_original$company)
+refine_original$company <- gsub("fillips", "philips", refine_original$company)
+refine_original$company <- gsub("phlips", "philips", refine_original$company)
+refine_original$company <- gsub("phllips", "philips", refine_original$company)
+refine_original$company <- gsub("phillps", "philips", refine_original$company)
+
+
+#2 separate product code and number
+#Split Product.code.number into product_code and product_number, respectively; add product_code and product_number to the dataframe
+
+library(dplyr)
+library(tidyr)
+
+refine_original <- separate(refine_original, Product.code...number, c("product_code", "product_number"), sep = "-")
+
+
+#3 add product categories
+# create the variable product_category with observations "Smartphone", "TV", "Laptop" and "Tablet" as equivalent to "p", "v", "x" and "q" in the product_code column
+
+refine_original$product_code[refine_original$product_code == "p"] <- "Smartphone"
+refine_original$product_code[refine_original$product_code == "v"] <- "TV"
+refine_original$product_code[refine_original$product_code == "x"] <- "Laptop"
+refine_original$product_code[refine_original$product_code == "q"] <- "Tablet"
+names(refine_original)[names(refine_original)=="product_code"] <- "product_category"
+
+
+#4 add full address for geocoding
+#unite address, city, country columns into one column data separated by comma called full_address
+
+
+refine_original <- refine_original %>% unite(full_address, address, city, country, sep = ",", remove = TRUE)
+
+
+#5 create dummy variables for company and product category
+
+company_philips <- as.numeric(refine_original$company == "philips")
+company_akzo <- as.numeric(refine_original$company == "akzo")
+company_van_houten <- as.numeric(refine_original$company == "van houten")
+company_unilever <- as.numeric(refine_original$company == "unilever")
+product_smartphone <- as.numeric(refine_original$product_category == "Smartphone")
+product_tv <- as.numeric(refine_original$product_category == "TV")
+product_laptop <- as.numeric(refine_original$product_category == "Laptop")
+product_tablet <- as.numeric(refine_original$product_category == "Tablet")
+refine_original$company_philips <- company_philips
+refine_original$company_akzo <- company_akzo
+refine_original$company_unilever <- company_unilever 
+refine_original$company_van_houten <- company_van_houten
+refine_original$product_smartphone <- product_smartphone
+refine_original$product_tv <- product_tv
+refine_original$product_laptop <- product_laptop
+refine_original$product_tablet <- product_tablet
+
+refine_original
+
+#6 save cleaned data and submit on Github
+#include code, original data as CSV file refine_original.csv and the cleaned data as CSV file called refine_clean.csv
+
+refine_clean <- refine_original
+as.data.frame(refine_clean)
+
+
